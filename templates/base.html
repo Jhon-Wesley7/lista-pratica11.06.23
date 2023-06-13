@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Minha Lista de Tarefas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/index">Página Inicial</a></li>
+            <li><a href="/lista-tarefas">Lista de Tarefas</a></li>
+            <li><a href="/adicionar-tarefa">Adicionar Tarefa</a></li>
+        </ul>
+    </nav>
+    <section>
+        {% block content %}{% endblock %}
+    </section>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Concluir Tarefa{% endblock %}
+
+{% block content %}
+    <h2>Concluir Tarefa</h2>
+    <p>Deseja marcar a tarefa como concluída?</p>
+    <a href="/concluir-tarefa/{{ task_id }}">Sim</a>
+    <a href="/lista-tarefas">Não</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Tarefas{% endblock %}
+
+{% block content %}
+    <h2>Lista de Tarefas</h2>
+    {% if tasks %}
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    {{ task }}
+                    <a href="/concluir-tarefa/{{ loop.index }}">Concluir</a>
+                    <a href="/excluir-tarefa/{{ loop.index }}">Excluir</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Não há tarefas na lista.</p>
+    {% endif %}
+{% endblock %}

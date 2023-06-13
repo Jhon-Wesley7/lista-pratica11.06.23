@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Excluir Tarefa{% endblock %}
+
+{% block content %}
+    <h2>Excluir Tarefa</h2>
+    <p>Deseja excluir a tarefa?</p>
+    <a href="/excluir-tarefa/{{ task_id }}">Sim</a>
+    <a href="/lista-tarefas">Não</a>
+{% endblock %}
